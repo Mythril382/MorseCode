@@ -1,0 +1,9 @@
+displayName: Morse Code
+name: morse-code
+subtitle: "v1.0.0"
+description: "Turns most text to morse code.\nSet the language to English for the Morse Code to apply."
+author: Mythril
+version: 1.0.0
+minGameVersion: 137
+hidden: true
+repo: Mythril382/MorseCode

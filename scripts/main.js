@@ -1,3 +1,5 @@
+let inFormat = false;
+
 const morse = {
    "A": "•-",
    "B": "-•••",
@@ -29,6 +31,9 @@ const morse = {
 
 function convert(str){
     return str.toUpperCase().split("").map(char => {
+        if(char == "[" || char == "{") inFormat = true;
+        else if(char == "]" || char == "}") inFormat = false;
+        if(inFormat) return char;
         return morse[char] ? morse[char] : char;
     }).join("");
 }
